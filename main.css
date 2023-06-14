@@ -10,6 +10,9 @@ html {
     object-fit: cover;
     z-index: -1;
 }
+.about-me {
+    background-color: lightblue;
+}
 body {
     background-color: #333;
     color:whitesmoke;
