@@ -1,0 +1,19 @@
+html {
+    font-size: 22px
+}
+.fullscreen-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+.about-me {
+    background-color: lightblue;
+}
+body {
+    background-color: #333;
+    color:whitesmoke;
+}
