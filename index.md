@@ -68,7 +68,7 @@
         <div class="portfolio">
             <center><h1><u>Portfolio</u></h1></center>
         </div>
-        <a href="covidvisualizations.html">
+        <a href="covidvisualizations.md">
             <img src="Choroplethgraph.jpg" alt="Transorming data to knowledge" />
         </a>
         </div>
