@@ -19,11 +19,9 @@ html {
             align-items: center;
         }
         .fullscreen-image {
-            background-image: url("editbeach.png");
             background-size: cover;
             background-position: center;
             height: 100vh;
-            alt="This Image is ai generated art from Open Ai's DALLE 2.0;
         }
         .portfolio {
             background-color: skyblue;
