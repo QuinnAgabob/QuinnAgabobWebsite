@@ -40,6 +40,40 @@
             justify-content: center;
             align-items: center;
         }
+        .port-image {
+          opacity: 1;
+          display: block;
+          width: 100%;
+          height: auto;
+          transition: .5s ease;
+          backface-visibility: hidden;
+        }
+        
+        .port-middle {
+          transition: .5s ease;
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          text-align: center;
+        }
+        
+        .port-container:hover .image {
+          opacity: 0.3;
+        }
+        
+        .port-container:hover .middle {
+          opacity: 1;
+        }
+        
+        .port-text {
+          background-color: #04AA6D;
+          color: white;
+          font-size: 16px;
+          padding: 16px 32px;
+        }
     </style>
 </head>
 <body bgcolor="#FFFFFF">
@@ -61,10 +95,11 @@
         </div>
         <div class="portfolio">
             <center><h1><u>Portfolio</u></h1></center>
-        <div class="hover-effect">
-            <a href="covidvisualizations.html">
-                <img src="Choroplethgraph.jpg" alt="Transforming data to knowledge" data-text="Transforming data to knowledge">
-            </a>
+        <div class="container">
+          <img src="Choroplethgrapoh.jpg" alt="Map of US and Covid cases" class="port-image" style="width:100%">
+          <div class="port-middle">
+            <div class="port-text">Data Visualizations</div>
+          </div>
         </div>
         </div>
 </body>
