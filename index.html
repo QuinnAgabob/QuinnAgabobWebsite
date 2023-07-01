@@ -18,18 +18,14 @@
             justify-content: center;
             align-items: center;
         }
-        .content {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
         .about-me {
             background-color: lightblue;
-            margin-bottom: 20px;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
         }
-        .portfolio {
-            background-color: skyblue;
-            margin-bottom: 20px;
         .large-image-container {
             display: flex;
             justify-content: center;
@@ -38,8 +34,16 @@
         }
     
         .large-image {
-            width: 100%;
+            width: auto;
             height: auto;
+        }
+        .portfolio {
+            background-color: skyblue;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
@@ -48,7 +52,6 @@
         <img src="image1.png" alt="This Image is ai generated art from Open Ai's DALLE 2.0;" class="large-image">
     </div>
     <div style="background-color: white; color: black; padding: 20px;">
-        <div class="content">
         <hr>
         <h2><center>“The data speaks for itself. That’s the easiest measure of success.”</center></h2>
         <hr>
@@ -71,6 +74,5 @@
                 <img src="Choroplethgraph.jpg" alt="Transforming data to knowledge" data-text="Transforming data to knowledge">
             </a>
         </div>
-        </div>div
 </body>
 </html>
