@@ -44,32 +44,53 @@
         .hover-effect {
         position: relative;
         display: inline-block;
-        }
-        
-        .hover-effect:hover::after {
-            content: attr(data-text);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            font-size: 14px;
-            font-weight: bold;
-            opacity: 0.9;
-            z-index: 1;
-        }
-        
-        .hover-effect a {
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
+    }
+
+    .hover-effect::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+    }
+    
+    .hover-effect:hover::before {
+        opacity: 0.7;
+    }
+
+    .hover-effect::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 2;
+    }
+    
+    .hover-effect:hover::after {
+        opacity: 1;
+    }
+
+    .hover-effect a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
     </style>
 </head>
 <body bgcolor="#FFFFFF">
-    <div class="fullscreen-image" style="background-image: url('editbeach.png');" alt="This Image is ai generated art from Open Ai's DALLE 2.0;></div>
+    <div class="fullscreen-image" style="background-image: url('editbeach.png');" alt=" This Image is ai generated art from Open Ai's DALLE 2.0;></div>
     <div style="background-color: white; color: black; padding: 20px;">
         <hr>
         <h2><center>“The data speaks for itself. That’s the easiest measure of success.”</center></h2>
@@ -80,8 +101,8 @@
             <p> 
                 Hi, my name is Quinn and I am a data scientist. I hold a Bachelor’s in Science (Data Analytics, Champlain College).<br><br>
                 I'm ethical, hard-working, and motivated. Passionate about leveraging data for insights and informed decisions. I value integrity in all aspects of my work.
-                I am continuously learning and improving in data science. I thrive in challenging environments, with my competitive nature, that drives me to excel.<br><br>
-                I am eager to contribute my skills to drive results, and I am ready and prepared to embrace the data-driven world.<br><br>
+                I am continuously learning and improving in data science. I thrive in challenging environments, and with my competitive nature, that drives me to excel.<br><br>
+                I am eager to contribute my skills to drive results and ready and prepared to embrace the data-driven world.<br><br>
             </p>
             </center>
         </div>
@@ -90,7 +111,7 @@
         </div>
         <div class="hover-effect">
             <a href="covidvisualizations.html">
-                <img src="Choroplethgraph.jpg" alt="Transorming data to knowledge" data-text="Transorming data to knowledge">
+                <img src="Choroplethgraph.jpg" alt="Transforming data to knowledge" data-text="Transforming data to knowledge">
             </a>
         </div>
 </body>
