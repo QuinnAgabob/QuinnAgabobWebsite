@@ -40,39 +40,22 @@
             justify-content: center;
             align-items: center;
         }
-        .port-image {
-          opacity: 1;
-          display: block;
-          width: 100%;
-          height: auto;
-          transition: .5s ease;
-          backface-visibility: hidden;
+        #image-link {
+          position: relative;
+          display: inline-block;
         }
-        
-        .port-middle {
-          transition: .5s ease;
-          opacity: 0;
+    
+        #image-link:hover::after {
+          content: "Click to redirect";
           position: absolute;
-          top: 50%;
+          top: 100%;
           left: 50%;
-          transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          text-align: center;
-        }
-        
-        .port-container:hover .image {
-          opacity: 0.3;
-        }
-        
-        .port-container:hover .middle {
-          opacity: 1;
-        }
-        
-        .port-text {
-          background-color: #04AA6D;
-          color: white;
-          font-size: 16px;
-          padding: 16px 32px;
+          transform: translateX(-50%);
+          background-color: rgba(0, 0, 0, 0.8);
+          color: #fff;
+          padding: 5px;
+          border-radius: 5px;
+          font-size: 14px;
         }
     </style>
 </head>
@@ -95,12 +78,9 @@
         </div>
         <div class="portfolio">
             <center><h1><u>Portfolio</u></h1></center>
-            <div class="port-container">
-              <img src="Choroplethgraph.jpg" alt="Map of US and Covid cases" class="port-image" style="width:100%">
-              <div class="port-middle">
-                <div class="port-text">Data Visualizations</div>
-              </div>
-            </div>
+            <a id="image-link" href="https://www.example.com">
+                <img src="your-image.jpg" alt="Clickable Image" />
+            </a>
         </div>
 </body>
 </html>
