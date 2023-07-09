@@ -32,14 +32,33 @@
             justify-content: center;
             align-items: center;
         }
-        .portfolio {
-            background-color: skyblue;
-            max-width: 100%;
-            margin: 0 auto;
-            padding: 20px;
-            justify-content: center;
-            align-items: center;
-        }
+            .portfolio {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+        
+            .portfolio ul {
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+            }
+        
+            .portfolio li {
+                margin: 0 10px;
+            }
+        
+            .portfolio a {
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #000;
+            }
         #image-link {
           position: relative;
           display: inline-block;
@@ -87,30 +106,22 @@
             </center>
         </div>
         <div class="portfolio">
-            <h1><u>Portfolio</u></h1>
-            <ul>
-                <li>
-                    <a href="covidvisualizations.html">
-                        <img src="Choroplethgraph.jpg" alt="Image 1" />
-                        <span>Project 1</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="anotherproject.html">
-                        <img src="AnotherProject.jpg" alt="Image 2" />
-                        <span>Project 2</span>
-                    </a>
-                </li>
-                <!-- Add more list items for additional projects -->
-            </ul>
-        </div>
-        <div class="contact">
-            <p style="text-align: center;">
-                <h2>Contact</h2>
-                Email: <a href="mailto:quinn.agabob@gmail.com" style="text-decoration: underline; color: blue;">quinn.agabob@gmail.com</a>
-                LinkedIn: <a href="https://www.linkedin.com/in/quinn-agabob/" target="_blank" style="text-decoration: underline; color: blue;">Quinn Agabob</a>
-                GitHub: <a href="https://github.com/QuinnAgabob" target="_blank" style="text-decoration: underline; color: blue;">QuinnAgabob</a>
-            </p>
-        </div>
+    <h1><u>Portfolio</u></h1>
+    <ul>
+        <li>
+            <a href="covidvisualizations.html">
+                <img src="Choroplethgraph.jpg" alt="Image 1" />
+                <span>Project 1</span>
+            </a>
+        </li>
+        <li>
+            <a href="anotherproject.html">
+                <img src="AnotherProject.jpg" alt="Image 2" />
+                <span>Project 2</span>
+            </a>
+        </li>
+        <!-- Add more list items for additional projects -->
+    </ul>
+</div>
 </body>
 </html>
